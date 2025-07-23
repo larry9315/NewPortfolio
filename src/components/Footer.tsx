@@ -12,12 +12,16 @@ export default function Footer() {
           >
             GitHub
           </a>
+          
           <a
-            href="mailto:your-email@example.com"
+            href="https://www.linkedin.com/in/larry-park/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-blue-600 transition-colors"
           >
-            Email
+            Linkedin
           </a>
+          
           <a
             href="/resume.pdf"
             className="hover:text-blue-600 transition-colors"
