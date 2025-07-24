@@ -1,7 +1,7 @@
-import "./globals.css";
+import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-
+import PageTransitionWrapper from '@/components/PageTransitionWrapper';
 
 export const metadata = {
   title: 'Larry Park | Portfolio',
@@ -15,10 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="h-screen flex flex-col overflow-hidden font-sans antialiased bg-white text-black">
+      <body className="flex flex-col font-sans antialiased bg-white text-black">
         <Navbar />
-        <main className="flex-1 overflow-hidden">
-          {children}
+        <main className="flex-1">
+          <PageTransitionWrapper>{children}</PageTransitionWrapper>
         </main>
         <Footer />
       </body>
