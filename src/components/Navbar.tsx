@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -12,18 +12,27 @@ export default function Navbar() {
 
         <ul className="flex gap-6 text-gray-700 font-medium">
           <li>
-            <Link href="/about" className="hover:text-gray-700 transition-colors">
+            <Link
+              href="/about"
+              className="hover:text-blue-600 transition-colors"
+            >
               About
             </Link>
           </li>
           <li>
-            <Link href="/projects" className="hover:text-gray-700 transition-colors">
-              Projects
+            <Link
+              href="/experience"
+              className="hover:text-blue-600 transition-colors"
+            >
+              Experience
             </Link>
           </li>
           <li>
-            <Link href="/about" className="hover:text-gray-700 transition-colors">
-              Contact
+            <Link
+              href="/projects"
+              className="hover:text-blue-600 transition-colors"
+            >
+              Projects
             </Link>
           </li>
         </ul>
